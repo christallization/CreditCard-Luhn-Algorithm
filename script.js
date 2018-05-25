@@ -9,7 +9,6 @@ function validateCards(bannedPrefixes, cardsToValidate) {
 	//Split and loop through bannedPrefixes string
 	var a = bannedPrefixes.split(", "), i;
 	for (i = 0; i < a.length; i++) {
-		//if ( cardsToValidate.startsWith(a[i]) === true ) { isAllowed == false; break; };
 		if ( ( cardsToValidate.lastIndexOf(a[i], 0) === 0 ) == true ) { isAllowedr = false; break; };
 	}
 
